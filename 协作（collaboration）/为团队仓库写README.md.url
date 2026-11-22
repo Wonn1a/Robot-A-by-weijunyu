@@ -3,3 +3,41 @@ Prop3=19,11
 [InternetShortcut]
 IDList=
 URL=https://github.com/Negative-Pressure-Wall-Climbing-Robot-A/Negative-Pressure-Wall-Climbing-Robot-A/blob/main/README.md
+
+
+
+
+
+
+Negative-Pressure-Wall-Climbing-Robot-A 负压爬壁机器人 A
+
+项目介绍 | Project Introduction
+
+Negative-Pressure-Wall-Climbing-Robot-A 是一款基于负压吸附的低成本爬壁机器人。机器人通过高速无刷风机抽出负压腔内的空气，形成压力差，从而吸附在玻璃、瓷砖、白板等平整、光滑、非渗透的垂直墙面上；两组直流减速电机驱动轮子，实现前进、后退和差速转向。主控采用 ESP32，内置 Wi-Fi 网页控制界面，手机或电脑连接后即可控制风机启停、调节吸力大小及机器人行走方向，无需安装额外 App。
+
+Negative-Pressure-Wall-Climbing-Robot-A is a low-cost wall-climbing robot that adheres to smooth vertical surfaces using negative air pressure. A high-speed brushless fan evacuates air from the suction chamber, creating a pressure difference that presses the robot against the wall. Two DC gear motors drive the wheels for forward, backward, and differential steering. Built around an ESP32, the robot hosts a Wi-Fi web control panel, allowing it to be operated from a phone or laptop without installing an app.
+项目亮点 | Highlights
+
+负压吸附：适用于玻璃、瓷砖、白板等平整光滑的非渗透墙面
+轮式移动：支持前进、后退及差速转向
+网页控制：ESP32 自带 Wi-Fi 控制页面，无需额外 App
+吸力可调：可根据墙面和负载情况调节风机转速
+开源低成本：模块化设计，便于复现与二次开发
+团队成员 | Team Members
+
+韦钧予（Wonn1a）、高智锋、袁振翔
+演示方法 | Demonstration
+
+场景准备：选择平整、光滑、无灰尘的垂直墙面（玻璃、瓷砖或白板），在墙面下方铺设软垫，并为机器人系好安全绳。
+上电自检：开启电源，等待约 5 秒完成电调（ESC）自检；此期间保持风机周围无人和杂物。
+连接控制：手机或电脑连接与 ESP32 相同的 Wi-Fi 网络，在浏览器中打开串口打印的 IP 地址，进入控制页面。
+负压吸附：点击风机 ON，逐步提高转速，直到机器人贴合墙面；轻拉安全绳，确认吸附牢靠。
+行走演示：依次点击前进、后退、左转、右转和停止，展示机器人在垂直墙面上的移动与转向能力。
+结束演示：先将吸力调至最低，再关闭风机，断电后取下机器人。
+English summary: Place the robot on a smooth vertical surface, power it on and wait for ESC arming, connect to the ESP32 web interface, turn on the fan and adjust suction, then demonstrate forward, backward, turning, and stop. Use a safety tether and a soft landing pad during testing.
+来源 | Source
+
+参考项目：https://github.com/Circuit-Digest/BEETLE-ROBOT
+许可证 | License
+
+本项目采用 MIT License，基于 Circuit-Digest/BEETLE-ROBOT 进行修改与复现。原项目版权归 Circuit Digest 所有；复制、修改或再发布时，请保留原版权声明及 MIT 许可文本。
